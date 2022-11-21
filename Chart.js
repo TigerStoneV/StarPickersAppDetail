@@ -8,23 +8,26 @@ window.onload = () => {
       // ②차트의 데이터(Object)
       data: {
         // ③x축에 들어갈 이름들(Array)
-        labels: ["급가속", "급감속", "급회전", "과속", "급출발"],
+        labels: ["총합","급가속", "급감속", "급회전", "과속", "급출발"],
         // ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
         datasets: [
           {
             // ⑤dataset의 이름(String)
             label: "rider Percentage",
             // ⑥dataset값(Array)
-            data: [urlParams.get("accel"), urlParams.get("decel"), urlParams.get("turn"), urlParams.get("overSpeed"), urlParams.get("start")],
+            data: [urlParams.get("total"),urlParams.get("accel"), urlParams.get("decel"), urlParams.get("turn"), urlParams.get("overSpeed"), urlParams.get("start")],
             // ⑦dataset의 배경색(rgba값을 String으로 표현)
             backgroundColor: [
+              'rgba(255, 102, 000, 0.5)',
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
                 'rgba(255, 206, 86, 0.5)',
                 'rgba(75, 192, 192, 0.5)',
                 'rgba(153, 102, 255, 0.5)',
                 'rgba(255, 159, 64, 0.5)'],
-            borderColor: ['rgb(255, 99, 132,1.5)',
+            borderColor: [
+              'rgba(255, 102, 000, 1.5)',
+              'rgb(255, 99, 132,1.5)',
                 'rgba(54, 162, 235, 1.5)',
                 'rgba(255, 206, 86, 1.5)',
                 'rgba(75, 192, 192, 1.5)',
@@ -37,6 +40,10 @@ window.onload = () => {
       },
       // ⑩차트의 설정(Object)
       options: {
+        // responsive: false,
+        legend:{
+          display: false
+        },
         // ⑪축에 관한 설정(Object)
         scales: {
           // ⑫y축에 대한 설정(Object)
@@ -51,3 +58,7 @@ window.onload = () => {
       },
     });
   };
+  // TODO:
+  // WARNING:
+  // NOTE:
+  // CHECKLIST:

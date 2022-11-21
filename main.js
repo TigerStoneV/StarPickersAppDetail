@@ -6,6 +6,7 @@ document.getElementById("workCount").innerHTML = urlParams.get("workCount")
 document.getElementById("rider").innerHTML = urlParams.get("rider")
 document.getElementById("sensor").innerHTML = urlParams.get("sensor")
 
+document.getElementById("total").innerHTML = urlParams.get("total")
 document.getElementById("overSpeed").innerHTML = urlParams.get("overSpeed")
 document.getElementById("accel").innerHTML = urlParams.get("accel")
 document.getElementById("decel").innerHTML = urlParams.get("decel")
