@@ -5,19 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Star-pickers-DetailPage</title>
-    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script src="./Chart.js"></script>
 </head>
 <body>
+    <div class="header">라이더로그 상세 페이지</div>
     <div class="content">
-        <div class="explain">
-            설명-
-            <div class="rider_name">라이더 이름:</div>
-            
-        </div>
         <div class="Chart"><canvas id="myChart"></canvas></div>
+        <div class="name_content">
+            <div class="Text">이번달 주행 횟수 :<span id ='workCount'></span>번</div>
+            <div class="Text">라이더 이름 :<span id ='rider'></span></div>
+            <div class="Text">센서 이름 :<span id ='sensor'></span></div>                
+            <div class="divider"></div>                
+            <div class="Text"> 과속 : 상위<span id ='overSpeed'></span>%</div>
+            <div class="Text" > 급가속 : 상위<span id ='accel'></span>%</div>
+            <div class="Text" > 급감속 : 상위<span id ='decel'></span>%</div>
+            <div class="Text" > 급출발 : 상위<span id ='start'></span>%</div>
+            <div class="Text" > 급회전 : 상위<span id ='turn'></span>%</div>
+        </div>            
+        <div class="explain">
+            <div class="explain_1">안내</div>
+            <div> * 라이더의 운전습관을 기록하여 백분율을 나타낸다.</div>
+            <div> * 전체 라이더 대비 각 항목별 위험도이다.</div>
+            <div> * 예)  홍길동 라이더는 급가속 백분율이 80일 경우</div>
+            <div> 상위 80%라는 의미로 위험도가 높은 수준이다. </div>
+        </div>
     </div>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./Chart.js"></script>
 </body>
 </html>

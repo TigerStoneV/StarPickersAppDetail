@@ -1,25 +1,58 @@
-html,body {
-    padding: 0px;
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
+    /* overflow: hidden; */
+}
+span{
+    margin-left: 7px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 ;
+    font-size: 24px;
+    background-color: #f5852a;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #979797, 4px 4px #3f3f3f;
+    margin: 0;
+
 }
 .content{
     width: 100%;
-    padding-right:20px
 }
 .content .explain {
-    width:100%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.content .explain .explain_1{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.content .name_content{
+    border: 1px solid #939393;
     padding: 10px;
+    margin: 20px 10px 20px 10px;
+    box-shadow: 5px 3px 3px grey;
 }
-.Chart{
-    width: 100%;
-    height:400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Chart {
+    margin: 30px 0 ;
 }
-/* #myChart{
-    width:100%;
-    height: 100%;
-} */
+.Text {
+    margin-top: 5px;
+    font-size: 18px;
+}
+.divider{
+    margin: 15px 0;
+    border-top: 2px solid  rgb(184, 184, 184);
+}
+
+ /* #myChart{ */
+    /* width: 80%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+/* }  */

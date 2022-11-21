@@ -1,3 +1,4 @@
+
 window.onload = () => {
     var chartArea = document.getElementById("myChart");
     // 차트를 생성한다.
@@ -14,7 +15,7 @@ window.onload = () => {
             // ⑤dataset의 이름(String)
             label: "rider Percentage",
             // ⑥dataset값(Array)
-            data: [12, 19, 3, 5, 2],
+            data: [urlParams.get("accel"), urlParams.get("decel"), urlParams.get("turn"), urlParams.get("overSpeed"), urlParams.get("start")],
             // ⑦dataset의 배경색(rgba값을 String으로 표현)
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
